@@ -17,8 +17,10 @@ while (playAgain === true) {
 
   playAgain = confirm("Do you want to play again?");
 
-  if (!playAgain);
-  {
+  if (playAgain) {
+    continue;
+  } else {
     alert(`Game over. Your final score is ${randomNumber}.`);
+    console.log(playAgain);
   }
 }
