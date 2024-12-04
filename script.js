@@ -2,7 +2,7 @@ let score;
 let playAgain = true;
 
 while (playAgain === true) {
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
   let userGuess = prompt("Guess a number between 1 and 10:");
 
   if ((userGuess = randomNumber)) {
