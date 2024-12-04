@@ -7,7 +7,7 @@ while (playAgain === true) {
 
   console.log(randomNumber);
 
-  if (userGuess === randomNumber) {
+  if (userGuess == randomNumber) {
     alert("Congratulations! You guessed the correct number.");
     score++;
   } else {
@@ -17,7 +17,6 @@ while (playAgain === true) {
   playAgain = confirm("Do you want to play again?");
 
   if (playAgain) {
-    score = 0;
     continue;
   } else {
     alert(`Game over. Your final score is ${score}.`);
