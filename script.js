@@ -1,4 +1,4 @@
-let score;
+let score = 0;
 let playAgain = true;
 
 while (playAgain === true) {
@@ -12,15 +12,15 @@ while (playAgain === true) {
     score++;
   } else {
     alert(`Sorry, the correct number was ${randomNumber}. You lose.`);
-    score++;
   }
 
   playAgain = confirm("Do you want to play again?");
 
   if (playAgain) {
+    score = 0;
     continue;
   } else {
-    alert(`Game over. Your final score is ${randomNumber}.`);
+    alert(`Game over. Your final score is ${score}.`);
     console.log(playAgain);
   }
 }
